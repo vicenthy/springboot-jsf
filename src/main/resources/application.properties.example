@@ -1,0 +1,36 @@
+spring.jpa.database=POSTGRESQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/
+spring.datasource.username=postgres
+spring.datasource.password=
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.jdbc.batch_size=25
+spring.jpa.properties.hibernate.order_inserts=true
+spring.jpa.properties.hibernate.order_update=true
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults = false
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+#second level cache
+spring.jpa.properties.hibernate.cache.use_second_level_cache=true
+spring.jpa.properties.hibernate.cache.use_query_cache=true
+spring.jpa.properties.hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.EhCacheRegionFactory
+spring.jpa.properties.javax.persistence.sharedCache.mode=ALL
+spring.cache.ehcache.config=classpath:ehcache.xml
+#Enable debug logs
+#debug=true
+# Enable trace logs.
+#trace=false
+# Banner file encoding.
+spring.banner.charset=UTF-8
+
+#security
+
+#join faces
+joinfaces.jsf.project-stage=development
+joinfaces.primefaces.theme=omega
+joinfaces.faces-servlet.enabled=true
+joinfaces.faces-servlet.load-on-startup=-1
+joinfaces.faces-servlet.name=FacesServlet
+joinfaces.faces-servlet.order=0
+joinfaces.faces-servlet.url-mappings=*.xhtml
+
