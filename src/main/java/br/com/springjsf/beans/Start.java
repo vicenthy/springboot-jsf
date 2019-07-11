@@ -12,7 +12,6 @@ import java.io.Serializable;
 
 @ViewScoped
 @Named("start")
-@Component
 public class Start implements Serializable {
 
 
